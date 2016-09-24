@@ -1,0 +1,30 @@
+{
+  "name": "myRetailServer",
+  "version": "0.1.0",
+  "description": "myRetail Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "node.js",
+    "eclipse",
+    "nodeclipse"
+  ],
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "~1.0.1",
+    "cassandra-driver": "^3.1.4",
+    "express": "~4.0.0",
+    "mongoose": "~3.6.13"
+  },
+  "author": "This Guy!",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "should": "^11.1.0",
+    "supertest": "^2.0.0"
+  }
+}
