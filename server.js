@@ -17,7 +17,7 @@ var bodyParser = require('body-parser');
 var cassandra = require('cassandra-driver');
 var async = require('async');
 
-const PORT=80;
+const PORT=8080;
 const PROD_SELECT_SQL = "SELECT product_id,currency_code, price FROM price_by_product_id WHERE product_id=?";
 const PROD_UPDATE_SQL = "UPDATE price_by_product_id SET price = ?, currency_code=? WHERE product_id=?";
 
