@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 # myRetail Server
 Node.js api POC for myRetail. 
 
@@ -45,7 +42,4 @@ cassandra.sql contains CQL to create and populate test data.
 Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
 
-Nodeclipse is free open-source project that grows with your contributions.
-=======
-# myRetail
->>>>>>> branch 'master' of https://github.com/wanderson3/myRetail
+ 
