@@ -1,3 +1,5 @@
+CREATE KEYSPACE myRetail
+	WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
 CREATE TABLE price_by_product_id (
     product_id int PRIMARY KEY,
