@@ -47,20 +47,20 @@ router.route('/products/:prod_id')
 	            if ( result.rows.length > 0 ) {
 	                var product = result.rows[0];
 	                // Retrieve product name from Target API
-	                https.get(API_HOST_URL+API_PATH+req.params.prod_id+API_PATH_PARAMS, (apiRes) => {
+	                https.get(API_HOST_URL+API_PATH+req.params.prod_id+API_PATH_PARAMS, function(apiRes) {
 	                    var data = "";
 	                    apiRes.on('data', function(chunk) {
 	                        data += chunk;
 	                    });
    
-	                    apiRes.on('end', (d) => {
+	                    apiRes.on('end', function(d) {
 	                    	//parse the data as JSON and find the "general description" field in the response
 	                    	var jsonContent = JSON.parse(data);
 		              	  	res.statusCode = 200;
 		              	  	res.json({ id: req.params.prod_id,name:jsonContent.product_composite_response.items[0].general_description,current_price:{value:product.price,currency_code:product.currency_code}});
 	              	  	});
 	              	
-	              	  }).on('error', (e) => {
+	              	  }).on('error', function(e) {
 	              	  console.log('Got error: ${e.message}');
 	              	});
 	                
